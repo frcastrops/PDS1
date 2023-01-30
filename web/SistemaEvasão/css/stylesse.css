@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+
+    min-height: 100vh;
+    background: #101026;
+}
+
+section {
+    display: flex;
+    margin-left: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+section h2 {
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #101026;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
+}
+
+/* MENU */
+.sidebar {
+    text-decoration: none;
+    position: fixed;
+    width: 24%;
+    height: 100%;
+    background-color: #0f0a4b;
+}
+
+.logo_menu img {
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    margin-top: 70px !important;
+    margin-left: 35%;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 30px;
+    width: 100%;
+    border-bottom: 1px solid rgb(44, 40, 40);
+    border-top: 1px solid black;
+    border-left: 5px solid transparent;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+    text-decoration: none;
+
+}
+
+.teste {
+    color: white;
+    margin-right: 10px;
+}
+
+.m {
+    color: white;
+    margin-left: 20%;
+    font-size: 20px;
+    margin-bottom: 20em;
+
+
+}
+
+.p {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 30%;
+    color: red;
+    font-size: 12px;
+}
+
+a:focus,
+a:hover {
+
+    border-left: 5px solid rgba(37, 41, 255, 0.575);
+    color: rgba(37, 41, 255, 0.575);
+}
+
+.sidebar a i {
+    font-size: 17px;
+    margin-right: 6px;
+}
+
+
+.sidebar a span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.suporte {
+    bottom: 0;
+    color: red;
+    margin-top: 10px;
+}
+
+.versao {
+    color: white;
+    font-size: 11px;
+    bottom: 0;
+    position: absolute;
+
+    margin-left: 30%;
+}
+
+
+@media (max-width:860px) {
+    .sidebar {
+        height: auto;
+        width: 300px;
+        margin: 10px 0;
+    }
+
+    .editar button:nth-child(2) {
+        margin-left: 250px !important;
+    }
+}

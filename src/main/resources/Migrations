@@ -1,0 +1,28 @@
+CREATE TABLE user_system(
+    idt_user SERIAL NOT NULL,
+    des_user_name CHARACTER VARYING(70) NOT NULL,
+    des_user_password CHARACTER VARYING(50) NOT NULL,
+    des_user_email CHARACTER VARYING(70) NOT NULL,
+    des_user_type CHARACTER VARYING(30) NOT NULL,
+    dat_user_creation TIMESTAMP NOT null,
+    CONSTRAINT user_pk1 PRIMARY KEY (idt_user)
+);
+
+
+CREATE TABLE studant(
+    idt_studant SERIAL NOT NULL,
+    des_studant_name CHARACTER VARYING(70) NOT NULL,
+    des_studant_email CHARACTER VARYING(100) NOT NULL,
+    num_studant_registration CHARACTER VARYING(70) NOT NULL,
+    flg_studant_sample BOOLEAN,
+    flg_studant_period BOOLEAN NOT NULL,
+    num_studant_cra BIGINT NOT NULL,
+    num_studant_age BIGINT NOT NULL,
+    flg_studant_gender BOOLEAN NOT NULL,
+    num_studant_disciplines BIGINT NOT NULL,
+    flg_studant_live_alone BOOLEAN NOT NULL,
+    flg_studant_has_son BOOLEAN NOT NULL,
+    flg_studant_have_job BOOLEAN NOT null,
+    flg_studant_will_evade BOOLEAN,
+    CONSTRAINT user_pk2 PRIMARY KEY (idt_studant)
+);
